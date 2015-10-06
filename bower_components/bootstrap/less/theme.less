@@ -290,19 +290,82 @@
   .box-shadow(@shadow);
 }
 
+/** Joel's Custom Styles **/
+
 body{
-    background:url(../../../../img/head.png) no-repeat right -80px;
+    background:url(../../../../img/head.png) no-repeat;
+    background-position: right -50%;
 }
 
 #header-main{
-  padding-top:50px;
+  .container{
+    position:relative;
+    padding-top:25px;
+  }
 }
 
 #home-jumbo{
   color:#0dbab1;
   background-color:transparent;
+  margin-bottom:0px;
   p{
-    font-size:32px;
+    font-size:3.5vmin; 
     font-family: serif;
+  }
+}
+
+#voice-nav-wrap{
+  width:250px;
+  float:right;
+ 
+  background-color:#ffffff;
+  border:2px solid #8dad3e;
+}
+
+#main-nav-wrap{
+  float:right;
+   top:-20px;
+  position:relative;
+}
+
+.nav-pills li a{
+  color:#fff;
+  text-transform: uppercase;
+  font-size:24px;
+  font-family: "bebas-neue",sans-serif;
+  &:hover{
+    text-decoration: underline;
+    background:transparent;
+  }
+}
+
+.nav-pills li li{
+  a{
+    color:#8dad3e;
+  }
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+  body{
+    background-position: right -20%;
+  }  
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  body{
+    background-position: right -10%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+  body{
+    background-position: right -6%;
   }
 }

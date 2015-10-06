@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Find Your Voice | Hartford, CT | Hartford Public Libraries</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
@@ -29,7 +29,31 @@
 
     <header id="header-main">
       <div class="container">
-        <img src="img/logo.png">
+
+      <div class="row">
+          <div class="col-md-6">
+            <img src="img/logo.png">
+          </div>
+
+          <div class="col-md-6">
+            <nav id="main-nav-wrap">
+              <ul class="nav nav-pills tk-bebas-neu">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Hartford Voices <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Joe Buon Keo</a></li>
+                    <li><a href="#">Joel Salisbury</a></li>                    
+                  </ul>
+                </li>
+                <li><a href="#">Find Your Voice</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -49,22 +73,34 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-6">
            <a href="#" class="thumbnail">
                 <img src="http://placehold.it/700x700" alt="...">
            </a>
        </div>
-        <div class="col-md-6">
+        <div class="col-xs-6">
            <a href="#" class="thumbnail">
                 <img src="http://placehold.it/700x700" alt="...">
            </a>
        </div>
+
+        <div class="col-xs-6">
+           <a href="#" class="thumbnail">
+                <img src="http://placehold.it/700x700" alt="...">
+           </a>
+       </div>
+        <div class="col-xs-6">
+           <a href="#" class="thumbnail">
+                <img src="http://placehold.it/700x700" alt="...">
+           </a>
+       </div>
+
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; 2015</p>
       </footer>
     </div> <!-- /container -->
 
@@ -74,6 +110,15 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'wna1gvr',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   </body>
 </html>
