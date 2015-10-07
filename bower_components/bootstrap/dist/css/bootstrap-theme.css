@@ -555,7 +555,6 @@ fieldset[disabled] .btn-danger.active {
 }
 /** Joel's Custom Styles **/
 body {
-  background: url(../../../../img/head.png) no-repeat;
   background-position: right -50%;
 }
 #header-main .container {
@@ -568,7 +567,7 @@ body {
   margin-bottom: 0px;
 }
 #home-jumbo p {
-  font-size: 3.5vmin;
+  font-size: 24px;
   font-family: serif;
 }
 #voice-nav-wrap {
@@ -595,12 +594,33 @@ body {
 .nav-pills li li a {
   color: #8dad3e;
 }
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background: transparent;
+}
+.stripe-slope {
+  position: absolute;
+  z-index: -99;
+  background-color: #0DBAA8;
+  width: 100%;
+  height: 30vh;
+  transform: rotate(13deg);
+  top: -17vh;
+  right: -20vh;
+}
+#main-nav-wrap {
+  background-color: #0DBAA8;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
     background-position: right -20%;
+  }
+  #main-nav-wrap {
+    background-color: transparent;
   }
 }
 /* Medium devices (desktops, 992px and up) */
