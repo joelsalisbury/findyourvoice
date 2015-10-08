@@ -629,4 +629,9 @@ body {
 }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .stripe-slope {
+    top: 0vh;
+  }
+}
 /*# sourceMappingURL=bootstrap-theme.css.map */
