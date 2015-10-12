@@ -292,6 +292,10 @@
 
 /** Joel's Custom Styles **/
 
+img{
+  max-width: 100%;
+}
+
 body{
     background-position: right -50%;
 }
@@ -323,7 +327,6 @@ body{
 
 #main-nav-wrap{
   float:right;
-   top:-20px;
   position:relative;
 }
 
@@ -344,6 +347,10 @@ body{
   }
 }
 
+.nav li:focus, .nav a:focus{
+background-color:transparent!important;
+}
+
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
   background:transparent;
 } 
@@ -354,14 +361,21 @@ body{
     background-color: #0DBAA8;
     width: 100%;
     height: 30vh;
-    transform: rotate(12deg);
+    //transform: rotate(12deg);
     top: -20vh;
     right: -2vw;
     transform-origin:bottom right; 
+    display:none;
 }
 
   #main-nav-wrap{
     background-color:#0DBAA8;
+  }
+
+  .navbar-toggle{
+    color:#0DBAA8;
+    border:1px solid #0DBAA8;
+    font-size:18px;
   }
 
 /* Extra small devices (phones, less than 768px) */
@@ -369,12 +383,6 @@ body{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
-  body{
-    background-position: right -20%;
-  }  
-  #main-nav-wrap{
-    background-color:transparent;
-  }
 
   .stripe-slope{
         top: -13vh;
