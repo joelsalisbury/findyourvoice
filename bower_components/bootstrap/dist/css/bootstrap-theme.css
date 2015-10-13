@@ -573,28 +573,28 @@ body {
   font-size: 24px;
   font-family: serif;
 }
-#voice-nav-wrap {
-  width: 250px;
-  float: right;
-  background-color: #ffffff;
-  border: 2px solid #8dad3e;
-}
-#main-nav-wrap {
-  float: right;
-  position: relative;
-}
-.nav-pills li a {
+.navbar-nav li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 24px;
   font-family: "bebas-neue", sans-serif;
 }
-.nav-pills li a:hover {
+.navbar-nav li a:hover {
   text-decoration: underline;
   background: transparent;
 }
-.nav-pills li li a {
+.navbar-nav li li a {
   color: #8dad3e;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  background-color: #0DBAA8;
+  margin-right: 20px;
+}
+.navbar-default {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 .nav li:focus,
 .nav a:focus {
@@ -606,37 +606,52 @@ body {
   background: transparent;
 }
 .stripe-slope {
-  position: absolute;
+  position: fixed;
   z-index: -99;
   background-color: #0DBAA8;
-  width: 100%;
-  height: 30vh;
-  top: -20vh;
-  right: -2vw;
-  transform-origin: bottom right;
-  display: none;
+  width: 100vw;
+  height: 17vw;
+  transform: rotate(13deg);
+  top: -11vw;
+  right: -5vw;
 }
 #main-nav-wrap {
-  background-color: #0DBAA8;
+  background-color: transparent;
 }
-.navbar-toggle {
-  color: #0DBAA8;
-  border: 1px solid #0DBAA8;
+.navbar-default .navbar-toggle {
+  background-color: #0DBAA8;
+  border: none;
   font-size: 18px;
+  color: #fff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+  width: 100%;
+  box-shadow: none;
+}
+.fyv-nav-wrap {
+  position: relative;
+  top: -25px;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .stripe-slope {
-    top: -13vh;
+    top: -11vw;
   }
 }
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .stripe-slope {
+    top: -11vw;
+  }
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .stripe-slope {
-    top: 0vh;
+    top: -11vw;
   }
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
