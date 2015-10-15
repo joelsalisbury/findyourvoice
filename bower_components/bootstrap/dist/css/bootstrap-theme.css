@@ -573,14 +573,17 @@ body {
   margin-bottom: 0px;
 }
 #home-jumbo p {
-  font-size: 30px;
+  font-size: 2.5vh;
   font-family: "Droid Serif";
-  line-height: 42px;
+  line-height: 3.5vh;
 }
 h2 {
   font-family: "bebas-neue", sans-serif;
   color: #8dad3e;
   font-size: 24px;
+}
+.navbar-nav > li {
+  background-color: #0dbaa8;
 }
 .navbar-default .navbar-nav li:active a {
   color: #fff;
@@ -588,6 +591,7 @@ h2 {
 .navbar-default .navbar-nav li .dropdown-menu {
   border: 2px solid #8dad3e;
   border-radius: 0px;
+  background-color: #fff;
 }
 .navbar-default .navbar-nav li a {
   color: #fff;
@@ -624,7 +628,7 @@ h2 {
 }
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  background-color: #0DBAA8;
+  background-color: #0dbaa8;
   margin-right: 20px;
 }
 .navbar-default .navbar-nav > li > a:hover {
@@ -634,6 +638,7 @@ h2 {
   background: transparent;
   border: none;
   box-shadow: none;
+  margin-bottom: 0px;
 }
 .nav li:focus,
 .nav a:focus {
@@ -647,7 +652,7 @@ h2 {
 .stripe-slope {
   position: absolute;
   z-index: -99;
-  background-color: #0DBAA8;
+  background-color: #0dbaa8;
   width: 100vw;
   height: 16vw;
   transform: rotate(7deg);
@@ -658,7 +663,7 @@ h2 {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  background-color: #0DBAA8;
+  background-color: #0dbaa8;
   border: none;
   font-size: 18px;
   color: #fff;
