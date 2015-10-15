@@ -296,6 +296,7 @@
 
 body{
   //background: linear-gradient(9deg, #fff 89%, #0dbaa8 89%);
+  overflow-x: hidden;
 }
 
 
@@ -319,9 +320,16 @@ body{
   background-color:transparent;
   margin-bottom:0px;
   p{
-    font-size:24px; 
-    font-family: serif;
+    font-size:30px; 
+    font-family: "Droid Serif";
+    line-height: 42px;
   }
+}
+
+h2{
+  font-family: "bebas-neue",sans-serif;
+  color:#8dad3e;
+  font-size:24px;
 }
 
 .navbar-default .navbar-nav li {
@@ -329,7 +337,6 @@ body{
     a{color:#fff;}
   }
   .dropdown-menu{
-    padding-right:20px;
     border:2px solid @fyvDarkGreen;
     border-radius:0px;
   }
@@ -397,12 +404,12 @@ background-color:transparent!important;
 } 
 
 .stripe-slope{
-    position: fixed;
+    position: absolute;
     z-index: -99;
     background-color: #0DBAA8;
     width: 100vw;
-    height: 17vw;
-    transform: rotate(13deg);
+    height: 16vw;
+    transform: rotate(7deg);
     top: -11vw;
     right: -5vw;
 }
@@ -450,6 +457,6 @@ background-color:transparent!important;
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
   .stripe-slope{
-        top: -11vw;
+        top: -12vw;
   }
 }

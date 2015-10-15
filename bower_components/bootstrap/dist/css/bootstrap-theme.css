@@ -554,6 +554,9 @@ fieldset[disabled] .btn-danger.active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 /** Joel's Custom Styles **/
+body {
+  overflow-x: hidden;
+}
 img {
   max-width: 100%;
 }
@@ -570,14 +573,19 @@ body {
   margin-bottom: 0px;
 }
 #home-jumbo p {
+  font-size: 30px;
+  font-family: "Droid Serif";
+  line-height: 42px;
+}
+h2 {
+  font-family: "bebas-neue", sans-serif;
+  color: #8dad3e;
   font-size: 24px;
-  font-family: serif;
 }
 .navbar-default .navbar-nav li:active a {
   color: #fff;
 }
 .navbar-default .navbar-nav li .dropdown-menu {
-  padding-right: 20px;
   border: 2px solid #8dad3e;
   border-radius: 0px;
 }
@@ -637,12 +645,12 @@ body {
   background: transparent;
 }
 .stripe-slope {
-  position: fixed;
+  position: absolute;
   z-index: -99;
   background-color: #0DBAA8;
   width: 100vw;
-  height: 17vw;
-  transform: rotate(13deg);
+  height: 16vw;
+  transform: rotate(7deg);
   top: -11vw;
   right: -5vw;
 }
@@ -682,7 +690,7 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .stripe-slope {
-    top: -11vw;
+    top: -12vw;
   }
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
