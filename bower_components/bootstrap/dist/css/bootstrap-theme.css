@@ -573,23 +573,54 @@ body {
   font-size: 24px;
   font-family: serif;
 }
-.navbar-nav li a {
+.navbar-default .navbar-nav li:active a {
+  color: #fff;
+}
+.navbar-default .navbar-nav li .dropdown-menu {
+  padding-right: 20px;
+  border: 2px solid #8dad3e;
+  border-radius: 0px;
+}
+.navbar-default .navbar-nav li a {
   color: #fff;
   text-transform: uppercase;
   font-size: 24px;
   font-family: "bebas-neue", sans-serif;
+  transition: .5s;
 }
-.navbar-nav li a:hover {
+.navbar-default .navbar-nav li a:focus {
+  color: #fff;
+}
+.navbar-default .navbar-nav li a:hover {
   text-decoration: underline;
   background: transparent;
+  color: #8dad3e;
 }
-.navbar-nav li li a {
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a {
+  background: none;
+  box-shadow: none;
+  text-decoration: underline;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background: transparent;
+}
+.navbar-default .navbar-nav li li:active a {
+  color: #8dad3e;
+}
+.navbar-default .navbar-nav li li a {
   color: #8dad3e;
 }
 .navbar-default .navbar-nav > li > a {
   color: #fff;
   background-color: #0DBAA8;
   margin-right: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
 }
 .navbar-default {
   background: transparent;
