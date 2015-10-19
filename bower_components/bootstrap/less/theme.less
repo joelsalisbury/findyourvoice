@@ -294,6 +294,17 @@
 
 @fyvDarkGreen: rgba(141,173,62,1.0);
 @fyvLightGreen: #0dbab1;
+@fyvSerif: "Droid Serif", serif;
+@fyvSansSerif: "bebas-neue",sans-serif;
+
+.serifText(@color, @size){
+    font-family: @fyvSerif;
+    line-height: 5vh;
+    font-size:@size;
+    color:@color;
+}
+
+
 body{
   //background: linear-gradient(9deg, #fff 89%, #0dbaa8 89%);
   overflow-x: hidden;
@@ -317,18 +328,16 @@ body{
 }
 
 #home-jumbo{
-  color:#0dbab1;
+
   background-color:transparent;
   margin-bottom:0px;
   p{
-    font-size:3.5vh;
-    font-family: "Droid Serif";
-    line-height: 5vh;
+    .serifText(#0dbab1, 3.5vh);
   }
 }
 
 h2,h3{
-  font-family: "bebas-neue",sans-serif;
+  font-family: @fyvSansSerif;
   color:@fyvDarkGreen;
   font-size:24px;
 }
@@ -467,14 +476,15 @@ background-color:transparent!important;
       opacity: 0;
       transition:.5s;
       text-align: center;
-      display:table-cell;
-      vertical-align: middle;
 
       h3{
         font-size:7vh;
         text-transform: uppercase;
         color:#fff;
-        display:inline-block;
+        width:100%;
+        position:absolute;
+        top:50%;
+        margin-top:-5.5vh;
       }
 
       p{
@@ -488,6 +498,58 @@ background-color:transparent!important;
         opacity:1;
       }
     }
+  }
+}
+
+#interior-jumbo{
+  background-color:#bccf8d;
+  margin-top:35px;
+  position: relative;
+  margin-bottom:195px;
+  h1{
+      font-size:7vh;
+      text-transform: uppercase;
+      color:#fff;
+  }
+  p{
+    .serifText(#ffffff,2.5vh);
+  }
+
+  .video-row{
+    position: relative;
+
+  }
+
+  .video-box{
+    width: 100%;
+    min-height: 35vh;
+    background-color: #fff;
+    box-shadow: 0px 0px 13px #333;
+    border-radius: 0px;
+    bottom: -218px;
+    position: relative;
+    margin-top: -218px;
+  }
+
+}
+
+.interior-lede{
+  text-align: center;
+  p{
+    .serifText(#767676,20px);
+    line-height: 32px;
+  }
+}
+
+
+.btn-fyv-red{
+  background-color:#e02544;
+  border-radius: 0px;
+  color:#fff;
+  padding:15px;
+  &:hover{
+    color:#fff;
+    text-decoration: underline;
   }
 }
 

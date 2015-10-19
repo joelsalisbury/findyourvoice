@@ -569,14 +569,14 @@ body {
   padding-top: 25px;
 }
 #home-jumbo {
-  color: #0dbab1;
   background-color: transparent;
   margin-bottom: 0px;
 }
 #home-jumbo p {
-  font-size: 3.5vh;
-  font-family: "Droid Serif";
+  font-family: "Droid Serif", serif;
   line-height: 5vh;
+  font-size: 3.5vh;
+  color: #0dbab1;
 }
 h2,
 h3 {
@@ -703,14 +703,15 @@ h3 {
   opacity: 0;
   transition: .5s;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
 }
 .voices-gallery .thumbnail .caption h3 {
   font-size: 7vh;
   text-transform: uppercase;
   color: #fff;
-  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -5.5vh;
 }
 .voices-gallery .thumbnail .caption p {
   font-size: 4vh;
@@ -718,6 +719,56 @@ h3 {
 }
 .voices-gallery .thumbnail:hover .caption {
   opacity: 1;
+}
+#interior-jumbo {
+  background-color: #bccf8d;
+  margin-top: 35px;
+  position: relative;
+  margin-bottom: 195px;
+}
+#interior-jumbo h1 {
+  font-size: 7vh;
+  text-transform: uppercase;
+  color: #fff;
+}
+#interior-jumbo p {
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 2.5vh;
+  color: #ffffff;
+}
+#interior-jumbo .video-row {
+  position: relative;
+}
+#interior-jumbo .video-box {
+  width: 100%;
+  min-height: 35vh;
+  background-color: #fff;
+  box-shadow: 0px 0px 13px #333;
+  border-radius: 0px;
+  bottom: -218px;
+  position: relative;
+  margin-top: -218px;
+}
+.interior-lede {
+  text-align: center;
+}
+.interior-lede p {
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 20px;
+  color: #767676;
+  line-height: 32px;
+}
+.btn-fyv-red {
+  background-color: #e02544;
+  border-radius: 0px;
+  color: #fff;
+  padding: 15px;
+}
+.btn-fyv-red:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
