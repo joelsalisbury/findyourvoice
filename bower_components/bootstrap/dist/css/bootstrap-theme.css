@@ -578,6 +578,7 @@ body {
   font-size: 3.5vh;
   color: #0dbab1;
 }
+h1,
 h2,
 h3 {
   font-family: "bebas-neue", sans-serif;
@@ -742,7 +743,7 @@ h3 {
 }
 #interior-jumbo .video-box {
   width: 100%;
-  min-height: 35vh;
+  min-height: 33vh;
   background-color: #fff;
   box-shadow: 0px 0px 13px #333;
   border-radius: 0px;
