@@ -633,6 +633,7 @@ h3 {
   color: #fff;
   background-color: #0dbab1;
   margin-right: 20px;
+  padding: 12px;
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
@@ -789,7 +790,7 @@ h3 {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .stripe-slope {
-    top: -12vw;
+    top: -10vw;
     display: block;
   }
 }
