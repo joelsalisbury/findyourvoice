@@ -83,7 +83,7 @@
             <nav class="navbar navbar-default">
               <button  class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar" data-target="#main-nav-wrap">menu</button>
               <nav id="main-nav-wrap" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
+<!--                 <ul class="nav navbar-nav">
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                       Hartford Voices <span class="caret"></span>
@@ -96,7 +96,8 @@
                   <li><a href="#">Find Your Voice</a></li>
                   <li><a href="#">Collections</a></li>
                   <li><a href="#">About</a></li>
-                </ul>
+                </ul> -->
+                <?php echo public_nav_main_bootstrap(); ?>
               </nav>
             </nav>
           </div>
