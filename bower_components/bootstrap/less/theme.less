@@ -321,9 +321,21 @@ body{
 }
 
 #header-main{
+  position:relative;
   .container{
     position:relative;
     padding-top:25px;
+  }
+  .stripe-slope{
+    position: absolute;
+    z-index: -99;
+    background-color: #0dbab1;
+    width: 100vw;
+    height: 18.5vw;
+    transform: rotate(7deg);
+    top: -15vw;
+    right: -5vw;
+    display:none;
   }
 }
 
@@ -419,17 +431,6 @@ background-color:transparent!important;
   background:transparent;
 } 
 
-.stripe-slope{
-    position: absolute;
-    z-index: -99;
-    background-color: @fyvLightGreen;
-    width: 100vw;
-    height: 16vw;
-    transform: rotate(7deg);
-    top: -11vw;
-    right: -5vw;
-    display:none;
-}
 
   #main-nav-wrap{
     background-color:transparent;
@@ -504,7 +505,7 @@ background-color:transparent!important;
 
 #interior-jumbo{
   background-color:#bccf8d;
-  margin-top:35px;
+  margin-top:55px;
   position: relative;
   margin-bottom:195px;
   h1{
@@ -523,9 +524,9 @@ background-color:transparent!important;
 
   .video-box{
     width: 100%;
-    min-height: 33vh;
-    background-color: #fff;
-    box-shadow: 0px 0px 13px #333;
+    //min-height: 33vh;
+    //background-color: #fff;
+    //box-shadow: 0px 0px 13px #333;
     border-radius: 0px;
     bottom: -218px;
     position: relative;
@@ -539,6 +540,7 @@ background-color:transparent!important;
   p{
     .serifText(#767676,20px);
     line-height: 32px;
+    padding-bottom:35px;
   }
 }
 
@@ -548,9 +550,18 @@ background-color:transparent!important;
   border-radius: 0px;
   color:#fff;
   padding:15px;
+  font-size:30px;
+  font-family: @fyvSansSerif;
   &:hover{
     color:#fff;
     text-decoration: underline;
+  }
+}
+
+.sub-footer{
+  margin-top:45px;
+  h3{
+    color:@fyvLightGreen;
   }
 }
 
@@ -560,25 +571,29 @@ background-color:transparent!important;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 
-  .stripe-slope{
-        top: -11vw;
-  }
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-  .stripe-slope{
-      top: -11vw;
-      display:block;
+  #header-main{
+    .stripe-slope{
+        display:block;
+        transform: rotate(9deg);
+        top: -12vw;
+   
+    }
   }
 
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
-  .stripe-slope{
-        top: -10vw;
+  #header-main{
+    .stripe-slope{
         display:block;
+        transform: rotate(7deg);
+        top: -15vw;
+    }
   }
 }
