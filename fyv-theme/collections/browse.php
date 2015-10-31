@@ -3,9 +3,10 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 ?>
 
-    <h1><?php echo 'Browse all collections'; ?></h1>
+
     
-    <div class="browse-collections">
+    <div class="container browse-collections">
+        <h1><?php echo 'Browse all collections'; ?></h1>
         <?php if ($total_results > 0): ?>
             <div class="browse-collections-header hidden-xs">
                 <div class="row">

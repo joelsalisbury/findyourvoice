@@ -75,7 +75,7 @@
       <div class="container">
       <div class="row">
           <div class="col-lg-5 col-md-3 col-xs-5">
-            <a href="index.html"><img src="img/logo.png"></a>
+            <a href="/"><img src="/img/logo.png"></a>
           </div>
 
           <div class="col-lg-7 col-md-9 col-xs-12 fyv-nav-wrap">

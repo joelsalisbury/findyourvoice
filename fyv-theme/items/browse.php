@@ -3,11 +3,11 @@
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
-    <h1><?php echo 'Browse all items'; ?></h1>
-    <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
-    <hr>    
 
-    <div class="browse-items">
+    <div class="container browse-items">
+        <h1><?php echo 'Browse all items'; ?></h1>
+    <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
+
         <?php if ($total_results > 0): ?>
         <?php
             $sortLinks[__('Title')] = 'Dublin Core,Title';
