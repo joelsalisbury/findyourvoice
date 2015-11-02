@@ -2,6 +2,8 @@
     $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 'Title')));
     echo head(array('title'=> $collectionTitle, 'bodyclass' => 'collections show'));
 ?>
+
+<div class="container">
     <h1><?php echo $collectionTitle; ?></h1>
     <?php echo all_element_texts('collection'); ?>
 
@@ -34,6 +36,6 @@
             <p><?php echo __("There are currently no items within this collection."); ?></p>
         <?php endif; ?>
     </div><!-- end collection-items -->
-
+</div>
 <?php fire_plugin_hook('public_collections_show', array('view' => $this, 'collection' => $collection)); ?>
 <?php echo foot(); ?>

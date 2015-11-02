@@ -16,43 +16,40 @@
     <div class="container">
       <h2>Hartford Voices</h2>
       <div class="row voices-gallery">
+            <?php 
+                $exhibits = get_records('Exhibit', array('featured'=>true));
+                foreach($exhibits as $exhibit):
+
+                
+                $exurl = url("exhibits/show/".$exhibit['slug']);
+                $page = $exhibit->getpages();
+                $demBlocks = $page[0]->getPageBlocks();
+                $demBlocks = $demBlocks[0];
+                $demTatchers = $demBlocks->getAttachments();
+                $datTatcher = $demTatchers[0];
+                $item = get_record_by_id('Item', $datTatcher->item_id);
+                $files = $item->Files;
+                $firstFile = $files[0];
+
+                $imgUrl = file_display_url($firstFile);
+
+            ?>
+
+
+
 
         <div class="col-xs-6">
            <div class="thumbnail">
-                <img src="img/keo.jpg" alt="...">
+                <img src="<?php echo $imgUrl; ?>" alt="...">
                 <div class="caption">
-                  <h3>Joe Bun Keo</h3>
+                  <h3><?php echo "<h3>". $exhibit['title']."</h3>";?></h3>
                 </div>
 
            </div>
        </div>
-        <div class="col-xs-6">
-           <div class="thumbnail">
-                <img src="img/reed.jpg" alt="...">
 
-              <div class="caption">
-                <h3>Gwen Reed</h3>
-              </div>
-
-           </div>
-       </div>
-
-        <div class="col-xs-6">
-           <div class="thumbnail">
-                <img src="img/noah.jpg" alt="...">
-              <div class="caption">
-                <h3>Noah Webster</h3>
-              </div>
-           </div>
-       </div>
-        <div class="col-xs-6">
-           <div class="thumbnail">
-                <img src="http://placehold.it/700x700" alt="...">
-              <div class="caption">
-                <h3>Gwen Reed</h3>
-              </div>
-           </div>
-       </div>
+   <?php endforeach;?>
+        
     </div>    
 
 </div>
