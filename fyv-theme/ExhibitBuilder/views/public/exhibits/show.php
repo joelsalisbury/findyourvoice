@@ -4,6 +4,26 @@ echo head(array(
     'bodyclass' => 'exhibits show'));
 ?>
 
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div id="interior-jumbo" class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Gwen Reed</h1>
+        <p class="serif blurb">A star shines on stage and in her community.</p>
+      </div>
+    </div>
+    <div class="row video-row">
+
+        <div class="col-md-6 col-md-offset-3">
+          <div class="video-box thumbnail">
+            <img src="img/video1.jpg">
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
 
 <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1>

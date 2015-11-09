@@ -6,7 +6,11 @@
 
     <div class="container browse-items">
         <h1><?php echo 'Browse all items'; ?></h1>
-    <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
+    <div class="row">
+        <div class="col-md-12">
+        <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
+        </div>
+    </div>
 
         <?php if ($total_results > 0): ?>
         <?php
@@ -15,12 +19,14 @@
             ?>
             <div class="browse-items-header hidden-xs">
                 <div class="row">
-                    <div class="col-sm-3 col-sm-offset-2 col-md-2 col-md-offset-2">
-                        <?php echo browse_sort_links(array('Title'=>'Dublin Core,Title'), array('')); ?>
+                    <div class="col-sm-3 col-md-2">
+                       <!--  <?php echo browse_sort_links(array('Title'=>'Dublin Core,Title'), array('')); ?> -->
+                        Title
                     </div>
                     <div class="col-sm-3 col-md-2">
-                        <?php echo browse_sort_links(array('Creator'=>'Dublin Core,Creator'), array('')); ?>
-                    </div>
+<!--                         <?php echo browse_sort_links(array('Creator'=>'Dublin Core,Creator'), array('')); ?>
+    -->  Creator               
+ </div>
                     <div class="hidden-sm col-md-2">
                         Subject
                     </div>
@@ -32,8 +38,8 @@
         
             <?php foreach (loop('items') as $item): ?>
             <div class="item">
-                <div class="row">
-                    <div class="col-sm-2 col-md-2">
+                <div class="row" style="background-color:#eee; margin-bottom:15px; padding-top:5px; padding-bottom:5px;">
+  <!--                   <div class="col-sm-2 col-md-2">
                         <?php $image = $item->Files; ?>
                         <?php if ($image) {
                                 echo link_to_item('<div style="background-image: url(' . file_display_url($image[0], 'original') . ');" class="img"></div>');
@@ -41,7 +47,7 @@
                                 echo link_to_item('<div style="background-image: url(' . img('defaultImage@2x.jpg') . ');" class="img"></div>');
                             }
                         ?>
-                    </div>
+                    </div> -->
                     <div class="col-sm-3 col-md-2">
                         <?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?>
                     </div>
@@ -51,7 +57,7 @@
                     <div class="hidden-sm col-md-2">
                         <?php echo metadata('item', array('Dublin Core', 'Subject')); ?>
                     </div>
-                    <div class="col-sm-4 col-md-4">
+                    <div class="col-sm-4 col-md-6">
                         <?php echo metadata('item', array('Dublin Core', 'Description'), array('snippet'=>150)); ?>
                     </div>
                 

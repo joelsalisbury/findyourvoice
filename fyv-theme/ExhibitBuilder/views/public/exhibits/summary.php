@@ -1,6 +1,25 @@
 <?php echo head(array('title' => metadata('exhibit', 'title'), 'bodyclass'=>'exhibits summary')); ?>
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div id="interior-jumbo" class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1><?php echo metadata('exhibit', 'title'); ?></h1>
+            <p class="serif blurb"></p>
+          </div>
+        </div>
+        <div class="row video-row">
+
+            <div class="col-md-6 col-md-offset-3">
+              <div class="video-box thumbnail">
+                <img src="img/video1.jpg">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
 <div class="container">
-<h1><?php echo metadata('exhibit', 'title'); ?></h1>
+
 <?php echo exhibit_builder_page_nav(); ?>
 
 <div id="primary">

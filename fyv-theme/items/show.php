@@ -2,7 +2,8 @@
     echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show'));
 ?>
 
-    <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
+    <div class="container">
+        <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 
     <div class="row">
         <div class="col-sm-6">
@@ -57,6 +58,7 @@
                 <div class="element-text"><?php echo output_format_list(); ?></div>
             </div>
         </div>
+    </div>
     </div>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
