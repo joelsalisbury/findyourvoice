@@ -9,7 +9,7 @@ echo head(array(
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Gwen Reed</h1>
+        <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
         <p class="serif blurb">A star shines on stage and in her community.</p>
       </div>
     </div>
@@ -26,7 +26,7 @@ echo head(array(
 
 <div class="container">
 
-<h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1>
+<!-- <h1><span class="exhibit-page"><?php echo metadata('exhibit_page', 'title'); ?></span></h1> -->
 
 <div id="exhibit-blocks">
 <?php exhibit_builder_render_exhibit_page(); ?>
