@@ -10,17 +10,17 @@ echo head(array(
     <div class="row">
       <div class="col-md-12 text-center">
         <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
-        <p class="serif blurb">A star shines on stage and in her community.</p>
+        <p class="serif blurb"><?php echo metadata('exhibit', 'description'); ?></p>
       </div>
     </div>
-    <div class="row video-row">
+<!--     <div class="row video-row">
 
         <div class="col-md-6 col-md-offset-3">
           <div class="video-box thumbnail">
-            <img src="img/video1.jpg">
+            <img src="http://findyourvoicehartford.org/files/fullsize/c05cf1301e6781c7e6eabbcfb342250d.jpg">
           </div>
         </div>
-    </div>
+    </div> -->
   </div>
 </div>
 

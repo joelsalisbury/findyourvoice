@@ -143,6 +143,10 @@ class ExhibitLayout
                 'name' => __('File with Text'),
                 'description' => __('Default layout features files justified to left or right with text displaying to the opposite side')
             ),
+            'contemporary-voice' => array(
+                'name' => __('Contemporary Voice Layout'),
+                'description' => __('Layout intended for Contemporary Voices')
+            ),
             'gallery' => array(
                 'name' => __('Gallery'),
                 'description' => __('A gallery layout featuring file thumbnails')
