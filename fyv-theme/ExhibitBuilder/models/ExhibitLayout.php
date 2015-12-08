@@ -143,8 +143,12 @@ class ExhibitLayout
                 'name' => __('File with Text'),
                 'description' => __('Default layout features files justified to left or right with text displaying to the opposite side')
             ),
+            'contemporary-voice-header' => array(
+                'name' => __('Contemporary Voice Header Block'),
+                'description' => __('Pick photo, then header, then block of text')
+            ),
             'contemporary-voice' => array(
-                'name' => __('Contemporary Voice Layout'),
+                'name' => __('Contemporary Voice Body!'),
                 'description' => __('Layout intended for Contemporary Voices')
             ),
             'gallery' => array(

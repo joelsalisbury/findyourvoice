@@ -729,7 +729,6 @@ h3 {
   background-color: #bccf8d;
   margin-top: 55px;
   position: relative;
-  margin-bottom: 195px;
 }
 #interior-jumbo h1 {
   font-size: 7vh;
@@ -762,6 +761,10 @@ h3 {
   color: #767676;
   line-height: 32px;
   padding-bottom: 35px;
+}
+#itemcarousel {
+  position: relative;
+  top: -55px;
 }
 .btn-fyv-red {
   background-color: #e02544;
