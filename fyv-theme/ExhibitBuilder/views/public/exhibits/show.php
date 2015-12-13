@@ -13,7 +13,7 @@ echo head(array(
 <?php exhibit_builder_render_exhibit_page(); ?>
 </div>
 
-<div id="exhibit-page-navigation">
+<!-- <div id="exhibit-page-navigation">
     <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
     <div id="exhibit-nav-prev">
     <?php echo $prevLink; ?>
@@ -27,11 +27,11 @@ echo head(array(
     <div id="exhibit-nav-up">
     <?php echo exhibit_builder_page_trail(); ?>
     </div>
-</div>
+</div> -->
 
-<nav id="exhibit-pages">
+<!-- <nav id="exhibit-pages">
     <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
     <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-</nav>
+</nav> -->
 
 <?php echo foot(); ?>

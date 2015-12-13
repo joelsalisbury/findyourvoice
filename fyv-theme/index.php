@@ -40,11 +40,12 @@
 
         <div class="col-xs-6">
            <div class="thumbnail">
+              <a href="<?php echo $exurl;?>">
                 <img src="<?php echo $imgUrl; ?>" alt="...">
                 <div class="caption">
                   <h3><?php echo "<h3>". $exhibit['title']."</h3>";?></h3>
                 </div>
-
+              </a>
            </div>
        </div>
 

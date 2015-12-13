@@ -145,11 +145,11 @@ class ExhibitLayout
             ),
             'contemporary-voice-header' => array(
                 'name' => __('Contemporary Voice Header Block'),
-                'description' => __('Pick photo, then header, then block of text')
+                'description' => __('Pick photo, then header, then a block of text')
             ),
             'contemporary-voice' => array(
                 'name' => __('Contemporary Voice Body!'),
-                'description' => __('Layout intended for Contemporary Voices')
+                'description' => __('Layout intended for the body of Contemporary Voices')
             ),
             'gallery' => array(
                 'name' => __('Gallery'),
@@ -158,6 +158,10 @@ class ExhibitLayout
             'text' => array(
                 'name' => __('Text'),
                 'description' => __('Layout featuring a block of text without files')
+            ),
+            'historic-voice-landing-header' => array(
+                'name' => __('Historic Voice Landing Page Header Block'),
+                'description' => __('Pick photo, then header, then a block of text')
             )
         );
 
