@@ -11,7 +11,7 @@ $captionPosition = isset($options['captions-position'])
 ?>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div id="interior-jumbo" class="jumbotron" style="margin-bottom:195px;">
+<div id="interior-jumbo" class="jumbotron" style="margin-bottom:170px;">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -41,7 +41,7 @@ $captionPosition = isset($options['captions-position'])
     </div>
 
     <div class="row video-row">
-        <div class="col-md-8 col-md-offset-2"><div class="video-box thumbnail"><?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?></div></div>
+        <div class="col-md-6 col-md-offset-3"><div class="video-box thumbnail"><?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?></div></div>
     </div>
   </div>
 </div>
