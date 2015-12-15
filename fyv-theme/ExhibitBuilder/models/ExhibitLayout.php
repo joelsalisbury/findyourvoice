@@ -162,6 +162,18 @@ class ExhibitLayout
             'historic-voice-landing-header' => array(
                 'name' => __('Historic Voice Landing Page Header Block'),
                 'description' => __('Pick photo, then header, then a block of text')
+            ),
+            'historic-voice-interior-header' => array(
+                'name' => __('Historic Voice Interior Page Header Block'),
+                'description' => __('Pick photo, then header, then a block of text')
+            ),
+            'find-your-voice-header' => array(
+                'name' => __('Find Your Voice (Tutorial Header)'),
+                'description' => __('Pick photo, then header, then a block of text')
+            ),
+            'find-your-voice-body' => array(
+                'name' => __('Find Your Voice (Tutorial Body)'),
+                'description' => __('Pick photo, then header, then a block of text')
             )
         );
 
