@@ -82,7 +82,7 @@
 .btn {
   // Remove the gradient for the pressed/active state
   &:active,
-  &.active {
+  &.active { 
     background-image: none;
   }
 }
@@ -472,7 +472,7 @@ background-color:transparent!important;
     position: relative;
     overflow:hidden;
     cursor: pointer;
-
+    max-height: 350px;
   
     .caption{
       position:absolute;
@@ -485,15 +485,14 @@ background-color:transparent!important;
       opacity: 0;
       transition:.5s;
       text-align: center;
-
+      display:flex;
+      justify-content:center;
+      align-items:center;
       h3{
-        font-size:7vh;
+        font-size:5vw;
         text-transform: uppercase;
         color:#fff;
         width:100%;
-        position:absolute;
-        top:50%;
-        margin-top:-5.5vh;
       }
 
       p{
@@ -541,6 +540,33 @@ background-color:transparent!important;
 
 }
 
+.find-your-voice-box{
+  .thumbnail{
+    background:#c0c0c0;
+    .serifText(#ffffff,20px);
+    line-height: 25px;
+    text-align: center;
+    ul{
+      padding:0px;
+      list-style: none;
+      li{
+        margin-bottom: 16px;
+      }
+    }
+    a{
+      color:#fff;
+      text-decoration: underline;
+    }
+    h1{
+      font-family: @fyvSansSerif;
+      font-weight: 200;
+      color: #ffffff;
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .interior-lede{
   text-align: center;
   p{
@@ -556,7 +582,9 @@ background-color:transparent!important;
 }
 
 
-.btn-fyv-red{
+
+
+.btn-fyv-red, .btn-fyv-red a{
   background-color:#e02544;
   border-radius: 0px;
   color:#fff;

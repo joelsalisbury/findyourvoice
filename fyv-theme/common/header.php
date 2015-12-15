@@ -80,7 +80,7 @@
 
           <div class="col-lg-7 col-md-9 col-xs-12 fyv-nav-wrap">
             
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default pull-right">
               <button  class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar" data-target="#main-nav-wrap">menu</button>
               <nav id="main-nav-wrap" class="collapse navbar-collapse">
 <!--                 <ul class="nav navbar-nav">

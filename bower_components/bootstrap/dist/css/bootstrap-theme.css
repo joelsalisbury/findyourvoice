@@ -696,6 +696,7 @@ h3 {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  max-height: 350px;
 }
 .voices-gallery .thumbnail .caption {
   position: absolute;
@@ -708,15 +709,15 @@ h3 {
   opacity: 0;
   transition: .5s;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .voices-gallery .thumbnail .caption h3 {
-  font-size: 7vh;
+  font-size: 5vw;
   text-transform: uppercase;
   color: #fff;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  margin-top: -5.5vh;
 }
 .voices-gallery .thumbnail .caption p {
   font-size: 4vh;
@@ -751,6 +752,33 @@ h3 {
   position: relative;
   margin-top: -218px;
 }
+.find-your-voice-box .thumbnail {
+  background: #c0c0c0;
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 25px;
+  text-align: center;
+}
+.find-your-voice-box .thumbnail ul {
+  padding: 0px;
+  list-style: none;
+}
+.find-your-voice-box .thumbnail ul li {
+  margin-bottom: 16px;
+}
+.find-your-voice-box .thumbnail a {
+  color: #fff;
+  text-decoration: underline;
+}
+.find-your-voice-box .thumbnail h1 {
+  font-family: "bebas-neue", sans-serif;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 48px;
+  text-transform: uppercase;
+}
 .interior-lede {
   text-align: center;
 }
@@ -766,7 +794,8 @@ h3 {
   position: relative;
   top: -55px;
 }
-.btn-fyv-red {
+.btn-fyv-red,
+.btn-fyv-red a {
   background-color: #e02544;
   border-radius: 0px;
   color: #fff;
@@ -774,7 +803,8 @@ h3 {
   font-size: 30px;
   font-family: "bebas-neue", sans-serif;
 }
-.btn-fyv-red:hover {
+.btn-fyv-red:hover,
+.btn-fyv-red a:hover {
   color: #fff;
   text-decoration: underline;
 }

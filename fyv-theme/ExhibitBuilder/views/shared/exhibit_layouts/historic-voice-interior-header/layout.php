@@ -14,46 +14,16 @@ $captionPosition = isset($options['captions-position'])
 <div id="interior-jumbo" class="jumbotron" style="margin-bottom:170px;">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
+
+        <div class="col-md-8">
+
+        <h2><?php echo metadata('exhibit', 'title'); ?></h2>
         <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
-<!--         <p class="serif blurb"><?php echo metadata('exhibit', 'description'); ?></p> -->
-        
-
-		   <?php $counter = 0; ?>
-	  	    <?php foreach ($attachments as $attachment): ?>
-
-	  	    	<?php if ($counter == 0){ 
-	  	    			$theclass = "active";
-		  	    		}
-		  	    		else{ 
-		  	    			$theclass =" ";
-		  	    		}
-	  	    	?>
-
-
-
-			  <!-- <div style="margin-top: 40px;" class="thumbnail"></div> -->
-
-		    <?php 
-		    	$counter++;
-		    endforeach; ?>
+        <p class="serif blurb"><?php echo $text; ?></p>
       </div>
-    </div>
 
-    <div class="row video-row">
-        <div class="col-md-6 col-md-offset-3"><div class="video-box thumbnail"><?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?></div></div>
     </div>
   </div>
 </div>
-  <div class="container">
-    <div class="row text-center interior-lede">
-      <p class="serif blurb"><?php echo $text; ?></p>
-        <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
-          <div id="exhibit-nav-next btn btn-fyv-red">
-            <?php echo $nextLink; ?>
-          </div>
-        <?php endif; ?>
-    </div>
 
-  </div>
 

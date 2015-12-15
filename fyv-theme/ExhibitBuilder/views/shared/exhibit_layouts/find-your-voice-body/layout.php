@@ -11,49 +11,73 @@ $captionPosition = isset($options['captions-position'])
 ?>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div id="interior-jumbo" class="jumbotron" style="margin-bottom:170px;">
+<div id="interior-jumbo" class="jumbotron" >
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
+
+        <div class="col-md-8 col-md-offset-2">
+        <h2>Find Your Voice</h2>
         <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
-<!--         <p class="serif blurb"><?php echo metadata('exhibit', 'description'); ?></p> -->
-        
-
-		   <?php $counter = 0; ?>
-	  	    <?php foreach ($attachments as $attachment): ?>
-
-	  	    	<?php if ($counter == 0){ 
-	  	    			$theclass = "active";
-		  	    		}
-		  	    		else{ 
-		  	    			$theclass =" ";
-		  	    		}
-	  	    	?>
-
-
-
-			  <!-- <div style="margin-top: 40px;" class="thumbnail"></div> -->
-
-		    <?php 
-		    	$counter++;
-		    endforeach; ?>
+  
       </div>
-    </div>
 
-    <div class="row video-row">
-        <div class="col-md-6 col-md-offset-3"><div class="video-box thumbnail"><?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?></div></div>
     </div>
   </div>
 </div>
-  <div class="container">
-    <div class="row text-center interior-lede">
-      <p class="serif blurb"><?php echo $text; ?></p>
-        <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
-          <div id="exhibit-nav-next btn btn-fyv-red">
-            <?php echo $nextLink; ?>
-          </div>
-        <?php endif; ?>
-    </div>
 
+<div class="container">
+<div class="row">
+<style>
+  .exhibit-prose p{
+    font-size:18px;
+    line-height:1.8em;
+  }
+</style>
+  <div class="col-md-8 col-md-offset-2">
+    <div class="exhibit-prose">
+<!--      <div class="col-md-6 col-sm-12 pull-right" style="transition:.5s;">
+        <div class="exhibit-items <?php echo $position; ?> <?php echo $size; ?> captions-<?php echo $captionPosition; ?>">
+
+              <div id="itemcarousel" class="carousel slide thumbnail" data-ride="carousel" style="transition:0.5s;">
+               
+                <div class="carousel-inner">
+                 <?php $counter = 0; ?>
+                      <?php foreach ($attachments as $attachment): ?>
+
+                        <?php if ($counter == 0){ 
+                            $theclass = "active";
+                            }
+                            else{ 
+                              $theclass =" ";
+                            }
+                        ?>
+
+                    <div class="item <?php echo $theclass;?>">
+
+                    <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
+                    </div>
+                    <?php 
+                      $counter++;
+                    endforeach; ?>
+                </div>
+              
+                  <a class="left carousel-control" href="#itemcarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#itemcarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+              </div> 
+        </div>
+      </div> -->
+      <div style='font-family:"Droid Serif", serif;'><?php echo $text; ?></div>
+
+    </div>
   </div>
+</div>
+</div>
+
+
 

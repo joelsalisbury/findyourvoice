@@ -17,7 +17,8 @@
       <h2>Hartford Voices</h2>
       <div class="row voices-gallery">
             <?php 
-                $exhibits = get_records('Exhibit', array('featured'=>true));
+                $exhibits = get_records('Exhibit', array('featured'=>true,'tag'=>'Hartford Voices'));
+                $count = 0;
                 foreach($exhibits as $exhibit):
 
                 
@@ -35,21 +36,50 @@
 
             ?>
 
-
-
-
         <div class="col-xs-6">
            <div class="thumbnail">
               <a href="<?php echo $exurl;?>">
                 <img src="<?php echo $imgUrl; ?>" alt="...">
                 <div class="caption">
-                  <h3><?php echo "<h3>". $exhibit['title']."</h3>";?></h3>
+                  <?php echo "<h3>". $exhibit['title']."</h3>";?>
                 </div>
               </a>
            </div>
-       </div>
+        </div>
 
-   <?php endforeach;?>
+        <?php
+          if ($count == 1){ ?>
+                  <div class="col-xs-6 find-your-voice-box">
+                    <div class="thumbnail">
+                      <h1>Find YOUR Voice</h1>
+                      <ul>
+                          <?php 
+                              $exhibits = get_records('Exhibit', array('featured'=>true,'tag'=>'Finding Your Voice'));
+                              $count = 0;
+                              foreach($exhibits as $exhibit):
+
+                              
+                              $exurl = url("exhibits/show/".$exhibit['slug']);
+                              
+                                echo '<a href="'.$exurl.'">';
+                                echo "<li>". $exhibit['title'] . "</li>";
+                                echo "</a>";
+
+                              endforeach;
+
+                          ?>   
+
+
+
+                        </ul>
+
+                     </div>
+                  </div>
+           <?php } ?>
+
+   <?php 
+    $count++;
+    endforeach;?>
         
     </div>    
 
