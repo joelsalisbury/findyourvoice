@@ -696,7 +696,6 @@ h3 {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  max-height: 350px;
 }
 .voices-gallery .thumbnail .caption {
   position: absolute;
