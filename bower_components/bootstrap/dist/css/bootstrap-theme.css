@@ -778,6 +778,12 @@ h3 {
   font-size: 48px;
   text-transform: uppercase;
 }
+p {
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 20px;
+  color: #767676;
+}
 .interior-lede {
   text-align: center;
 }
