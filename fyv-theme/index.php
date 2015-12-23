@@ -32,7 +32,8 @@
                 $files = $item->Files;
                 $firstFile = $files[0];
 
-                $imgUrl = file_display_url($firstFile);
+                //$imgUrl = file_display_url($firstFile);
+                $imgUrl = "/img/".$exhibit['slug'].".jpg";
 
             ?>
 

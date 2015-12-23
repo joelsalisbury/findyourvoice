@@ -151,6 +151,10 @@ class ExhibitLayout
                 'name' => __('Contemporary Voice Body!'),
                 'description' => __('Layout intended for the body of Contemporary Voices')
             ),
+              'contemporary-voice-header-youtube' => array(
+                'name' => __('Contemporary Voice Header w Youtube'),
+                'description' => __('For the Tubes of You')
+            ),
             'gallery' => array(
                 'name' => __('Gallery'),
                 'description' => __('A gallery layout featuring file thumbnails')
