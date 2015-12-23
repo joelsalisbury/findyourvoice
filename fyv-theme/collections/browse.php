@@ -24,28 +24,27 @@
         
             <?php foreach (loop('collections') as $collection): ?>
                 <div class="collection">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <?php if ($collectionImage = record_image('collection', 'square_thumbnail')): ?>
-                                <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
-                            <?php endif; ?>
-                        </div>
-                        <div class="col-sm-3">
-                            <?php echo link_to_collection(); ?>
-                        </div>
-                        <div class="col-sm-3">
-                            <?php if ($collection->hasContributor()): ?>
-                                <?php echo metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', ')); ?>
-                            <?php endif; ?>
-                        </div>
-                        <div class="col-sm-4">
-                            <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
-                                <?php echo text_to_paragraphs(metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>150))); ?>
-                            <?php endif; ?>
-                        </div>
-                    
-                        <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'collection' => $collection)); ?>
-                    </div>
+
+<div class="media">
+  <div class="media-left">
+        <?php if ($collectionImage = record_image('collection', 'square_thumbnail')): ?>
+            <?php echo $collectionImage; ?>
+        <?php endif; ?>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+                    <?php echo link_to_collection(); ?>
+                    <?php if ($collection->hasContributor()): ?>
+                        <?php echo metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', ')); ?>
+                    <?php endif; ?>
+                    <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
+                        <?php echo text_to_paragraphs(metadata('collection', array('Dublin Core', 'Description'), array('snippet'=>150))); ?>
+                    <?php endif; ?>
+  </div>
+    <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'collection' => $collection)); ?>
+</div>
+
+
                 </div>
             <?php endforeach; ?>
         <?php else : ?>
