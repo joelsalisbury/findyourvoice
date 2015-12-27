@@ -171,6 +171,10 @@ class ExhibitLayout
                 'name' => __('Historic Voice Interior Page Header Block'),
                 'description' => __('Pick photo, then header, then a block of text')
             ),
+              'historic-voice-header-youtube' => array(
+                'name' => __('Historic Voice Header w Youtube'),
+                'description' => __('For the Tubes of You')
+            ),
             
             'historic-voice-body' => array(
                 'name' => __('Historic Voice Interior Page Body Block'),

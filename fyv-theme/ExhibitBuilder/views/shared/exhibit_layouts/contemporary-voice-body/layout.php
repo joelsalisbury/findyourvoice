@@ -16,6 +16,10 @@ $captionPosition = isset($options['captions-position'])
 		font-size:18px;
 		line-height:1.8em;
 	}
+	.exhibit-item-caption{
+		padding-left:25px;
+		padding-right:25px;
+	}
 </style>
 	<div class="col-md-12">
 		<div class="exhibit-prose">
@@ -36,9 +40,11 @@ $captionPosition = isset($options['captions-position'])
 								  	    		}
 							  	    	?>
 
+
 								    <div class="item <?php echo $theclass;?>">
 
 									  <?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?>
+								    
 								    </div>
 								    <?php 
 								    	$counter++;
