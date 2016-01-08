@@ -107,7 +107,7 @@
               <a href="#">
                 <img src="img/noah1.jpg" alt="...">
                 <div class="caption">
-                  <?php echo "<h3>Shared Language</h3>";?>
+                  <?php echo "<h3>Powerful Words</h3>";?>
                 </div>
               </a>
            </div>
