@@ -397,10 +397,16 @@ h1,h2,h3{
 
   &:active{
     a{color:@fyvDarkGreen;}
+    background:transparent;
   }
   a{
     color:@fyvDarkGreen;
+    background:transparent;
+      &.active{
+        text-decoration: underline;
+      }
   }
+
 }
 
 
@@ -535,11 +541,13 @@ background-color:transparent!important;
 }
 
 .find-your-voice-box{
+
   .thumbnail{
+    padding:25px;
     background:#c0c0c0;
     .serifText(#ffffff,20px);
     line-height: 25px;
-    text-align: center;
+    text-align: left;
     ul{
       padding:0px;
       list-style: none;
@@ -549,7 +557,10 @@ background-color:transparent!important;
     }
     a{
       color:#fff;
-      text-decoration: underline;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
     }
     h1{
       font-family: @fyvSansSerif;

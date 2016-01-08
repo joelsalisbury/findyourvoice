@@ -15,7 +15,7 @@
 
     <div class="container">
       <h2>Hartford Voices</h2>
-      <div class="row voices-gallery">
+      <div class="row voices-gallery masonry-container">
             <?php 
                 $exhibits = get_records('Exhibit', array('featured'=>true,'tag'=>'Hartford Voices'));
                 $count = 0;
@@ -81,7 +81,38 @@
    <?php 
     $count++;
     endforeach;?>
-        
+    
+        <div class="col-xs-6">
+           <div class="thumbnail">
+              <a href="#">
+                <img src="img/newtrad.jpg" alt="...">
+                <div class="caption">
+                  <?php echo "<h3>New Traditions</h3>";?>
+                </div>
+              </a>
+           </div>
+        </div>
+        <div class="col-xs-6">
+           <div class="thumbnail">
+              <a href="#">
+                <img src="img/historydetective.jpg" alt="...">
+                <div class="caption">
+                  <?php echo "<h3>History Detective</h3>";?>
+                </div>
+              </a>
+           </div>
+        </div>
+        <div class="col-xs-6">
+           <div class="thumbnail">
+              <a href="#">
+                <img src="img/noah1.jpg" alt="...">
+                <div class="caption">
+                  <?php echo "<h3>Shared Language</h3>";?>
+                </div>
+              </a>
+           </div>
+        </div>
+
     </div>    
 
 </div>

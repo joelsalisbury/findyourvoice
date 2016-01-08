@@ -1,14 +1,44 @@
-
     <footer>
         <hr>
+<style>
+#home .htfd-voices{
+  display:none;
+}
+</style>
+        <div class="htfd-voices container">
+          <h2>Hartford Voices</h2>
+          <div class="row">
+            <div class="thumbnail col-md-3"><a href="#"><img class="img-responsive" src="/img/contemporary-voice.jpg"></a></div> 
+            <div class="thumbnail col-md-3"><a href="#"><img class="img-responsive" src="/img/gwen-reed.jpg"></a></div>
+            <div class="thumbnail col-md-3"><a href="#"><img class="img-responsive" src="/img/newtrad.jpg"></a></div>
+            <div class="thumbnail col-md-3"><a href="#"><img class="img-responsive" src="/img/historydetective.jpg"></a></div>
+          </div>
+        </div>
+
         <div class="container">
             <p class="text-center">
                 <?php echo __('Copyright &copy; ') . date('Y') . ' ' . link_to_home_page() . ', All Rights Reserved.'; ?><br>
                 <?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?>
             </p>
         </div>
+
         <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>       
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script>
+        jQuery(document).ready(function(){
+          var container = jQuery('.masonry-container');
+          container.imagesLoaded( function () {
+            container.masonry({
+              columnWidth: '.col-xs-6',
+              itemSelector: '.col-xs-6'
+            });   
+          });
+        });
+       </script>
     </footer>
+
     <script>
       (function(d) {
         var config = {

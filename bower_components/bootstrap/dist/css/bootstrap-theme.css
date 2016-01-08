@@ -634,11 +634,18 @@ h3 {
   color: #fff;
   background: transparent;
 }
+.fyv-nav-wrap .navbar-default .navbar-nav li li:active {
+  background: transparent;
+}
 .fyv-nav-wrap .navbar-default .navbar-nav li li:active a {
   color: #8dad3e;
 }
 .fyv-nav-wrap .navbar-default .navbar-nav li li a {
   color: #8dad3e;
+  background: transparent;
+}
+.fyv-nav-wrap .navbar-default .navbar-nav li li a.active {
+  text-decoration: underline;
 }
 .fyv-nav-wrap .navbar-default .navbar-nav > li > a {
   color: #fff;
@@ -749,13 +756,14 @@ h3 {
   margin-top: -218px;
 }
 .find-your-voice-box .thumbnail {
+  padding: 25px;
   background: #c0c0c0;
   font-family: "Droid Serif", serif;
   line-height: 5vh;
   font-size: 20px;
   color: #ffffff;
   line-height: 25px;
-  text-align: center;
+  text-align: left;
 }
 .find-your-voice-box .thumbnail ul {
   padding: 0px;
@@ -766,6 +774,9 @@ h3 {
 }
 .find-your-voice-box .thumbnail a {
   color: #fff;
+  text-decoration: none;
+}
+.find-your-voice-box .thumbnail a:hover {
   text-decoration: underline;
 }
 .find-your-voice-box .thumbnail h1 {

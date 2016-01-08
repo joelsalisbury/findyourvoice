@@ -5,17 +5,16 @@
 
 <div class="container">
     <h1><?php echo $collectionTitle; ?></h1>
-    <?php echo all_element_texts('collection'); ?>
+    <h2>Collection Items</h2>
+    <?php //echo all_element_texts('collection'); ?>
 
-    <div class="row" id="collection-items">
-        <h2><?php echo link_to_items_browse(__('Items in the %s Collection', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?></h2>
+    <div class="row masonry-container" id="collection-items">
+       <!--  <h2><?php echo link_to_items_browse(__('Items in the %s Collection', $collectionTitle), array('collection' => metadata('collection', 'id'))); ?></h2> -->
         <?php if (metadata('collection', 'total_items') > 0): ?>
             <?php foreach (loop('items') as $item): ?>
             <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
             <div class="col-md-4">
                 <div class="item hentry thumbnail">
-                    
-        
                     <?php if (metadata('item', 'has thumbnail')): ?>
                     <div class="item-img">
                         <?php echo link_to_item(item_image('thumbnail', array('alt' => $itemTitle))); ?>

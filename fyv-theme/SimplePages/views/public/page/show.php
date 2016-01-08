@@ -12,10 +12,12 @@ echo head(array(
 ?>
 <div class="container" id="primary">
     <?php if (!$is_home_page): ?>
-    <p id="simple-pages-breadcrumbs"><?php echo simple_pages_display_breadcrumbs(); ?></p>
-    <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
+<!--     <p id="simple-pages-breadcrumbs breadcrumb"><?php echo simple_pages_display_breadcrumbs(); ?></p>
+ -->    <h1><?php echo metadata('simple_pages_page', 'title'); ?></h1>
     <?php endif; ?>
-    <img class="thumbnail pull-right" src="/img/museum.jpg">
+        <div style="margin:25px;" class="pull-right thumbnail">
+            <img class="img-responsive" src="/img/museum.jpg">
+        </div>
     <?php
     $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
     echo $this->shortcodes($text);

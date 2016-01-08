@@ -8,6 +8,11 @@ $size = isset($options['file-size'])
 $captionPosition = isset($options['captions-position'])
     ? html_escape($options['captions-position'])
     : 'center';
+
+$youtubeurl = isset($options['youtube-url'])
+    ? $options['youtube-url']
+    : '';
+
 ?>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -20,34 +25,14 @@ $captionPosition = isset($options['captions-position'])
         <p class="serif blurb"><?php echo $text; ?></p>
       </div>
       <div class="col-md-6">
-		   <?php $counter = 0; ?>
-	  	    <?php foreach ($attachments as $attachment): ?>
-
-	  	    	<?php if ($counter == 0){ 
-	  	    			$theclass = "active";
-		  	    		}
-		  	    		else{ 
-		  	    			$theclass =" ";
-		  	    		}
-	  	    	?>
-
-
-
-			  <div style="margin-top: 40px;" class="thumbnail"><?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?></div>
-
-		    <?php 
-		    	$counter++;
-		    endforeach; ?>
+        <div style="margin-top: 40px;" class="thumbnail embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/<?php echo $youtubeurl;?>" frameborder="0" 
+          allowfullscreen></iframe>
+        </div>
       </div>
     </div>
-<!--     <div class="row video-row">
 
-        <div class="col-md-6 col-md-offset-3">
-          <div class="video-box thumbnail">
-            <img src="http://findyourvoicehartford.org/files/fullsize/c05cf1301e6781c7e6eabbcfb342250d.jpg">
-          </div>
-        </div>
-    </div> -->
   </div>
 </div>
 

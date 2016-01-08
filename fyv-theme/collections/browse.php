@@ -32,8 +32,8 @@
         <?php endif; ?>
   </div>
   <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
-                    <?php echo link_to_collection(); ?>
+
+                      <h4 class="media-heading"><?php echo link_to_collection(); ?> </h4>
                     <?php if ($collection->hasContributor()): ?>
                         <?php echo metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', ')); ?>
                     <?php endif; ?>
