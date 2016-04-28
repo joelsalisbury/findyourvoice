@@ -1,5 +1,56 @@
-// Add your custom CSS here
+img{
+    max-width:100%!important;
+}
 
-img {
-    max-width: 100%;
+.interior-jumbo {
+  background-color: #bccf8d;
+  margin-top: 55px;
+  position: relative;
+}
+.interior-jumbo h1 {
+  font-size: 7vh;
+  text-transform: uppercase;
+  color: #fff;
+}
+.interior-jumbo p {
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 2.5vh;
+  color: #ffffff;
+}
+.interior-jumbo .video-row {
+  position: relative;
+}
+.interior-jumbo .video-box {
+  width: 100%;
+  border-radius: 0px;
+  bottom: -218px;
+  position: relative;
+  margin-top: -218px;
+}
+
+.itemcarousel{
+  height:380px!important;
+  top:0px!important;
+  border:none!important;
+  box-shadow: none!important;
+}
+
+.exhibit-item-caption p {
+    font-family: Arial, sans-serif;
+    font-size: 15px!important;
+    color: #333;
+    text-align: center;
+}
+
+.itemcarousel .item{
+  max-height:340px!important;
+}
+
+.itemcarousel .item img{
+  max-height:300px!important;
+}
+
+.btn-fyv-red, .btn-fyv-red a{
+  background-color:#0dbab1!important;
 }

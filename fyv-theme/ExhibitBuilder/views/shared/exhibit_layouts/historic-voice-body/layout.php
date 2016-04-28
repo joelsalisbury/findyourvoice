@@ -21,8 +21,8 @@ $captionPosition = isset($options['captions-position'])
 		<div class="exhibit-prose">
 			<div class="col-md-6 col-sm-12 pull-right" style="transition:.5s;">
 				<div class="exhibit-items <?php echo $position; ?> <?php echo $size; ?> captions-<?php echo $captionPosition; ?>">
-
-							<div id="itemcarousel" class="carousel slide thumbnail" data-ride="carousel" style="transition:0.5s;">
+	<?php $daRand = rand(0,2500); ?>
+							<div id="itemcarousel<?php echo $daRand; ?>" class="itemcarousel carousel slide thumbnail" data-ride="carousel" style="transition:0.5s;">
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   <?php $counter = 0; ?>
@@ -44,15 +44,17 @@ $captionPosition = isset($options['captions-position'])
 								    	$counter++;
 								    endforeach; ?>
 							  </div>
+							  <?php if(count($attachments) > 1) { ?>
 								<!-- Controls -->
-								  <a class="left carousel-control" href="#itemcarousel" role="button" data-slide="prev">
+								  <a class="left carousel-control" href="#itemcarousel<?php echo $daRand; ?>" role="button" data-slide="prev">
 								    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 								    <span class="sr-only">Previous</span>
 								  </a>
-								  <a class="right carousel-control" href="#itemcarousel" role="button" data-slide="next">
+								  <a class="right carousel-control" href="#itemcarousel<?php echo $daRand; ?>" role="button" data-slide="next">
 								    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 								    <span class="sr-only">Next</span>
 								  </a>
+								<?php } ?>
 							</div>
 				</div>
 			</div>

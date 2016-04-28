@@ -558,9 +558,6 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
 }
-img {
-  max-width: 100%;
-}
 body {
   background-position: right -50%;
 }
@@ -637,11 +634,18 @@ h3 {
   color: #fff;
   background: transparent;
 }
+.fyv-nav-wrap .navbar-default .navbar-nav li li:active {
+  background: transparent;
+}
 .fyv-nav-wrap .navbar-default .navbar-nav li li:active a {
   color: #8dad3e;
 }
 .fyv-nav-wrap .navbar-default .navbar-nav li li a {
   color: #8dad3e;
+  background: transparent;
+}
+.fyv-nav-wrap .navbar-default .navbar-nav li li a.active {
+  text-decoration: underline;
 }
 .fyv-nav-wrap .navbar-default .navbar-nav > li > a {
   color: #fff;
@@ -708,15 +712,15 @@ h3 {
   opacity: 0;
   transition: .5s;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .voices-gallery .thumbnail .caption h3 {
-  font-size: 7vh;
+  font-size: 5vw;
   text-transform: uppercase;
   color: #fff;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  margin-top: -5.5vh;
 }
 .voices-gallery .thumbnail .caption p {
   font-size: 4vh;
@@ -751,6 +755,43 @@ h3 {
   position: relative;
   margin-top: -218px;
 }
+.find-your-voice-box .thumbnail {
+  padding: 25px;
+  background: #c0c0c0;
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 25px;
+  text-align: left;
+}
+.find-your-voice-box .thumbnail ul {
+  padding: 0px;
+  list-style: none;
+}
+.find-your-voice-box .thumbnail ul li {
+  margin-bottom: 16px;
+}
+.find-your-voice-box .thumbnail a {
+  color: #fff;
+  text-decoration: none;
+}
+.find-your-voice-box .thumbnail a:hover {
+  text-decoration: underline;
+}
+.find-your-voice-box .thumbnail h1 {
+  font-family: "bebas-neue", sans-serif;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Droid Serif", serif;
+  line-height: 5vh;
+  font-size: 20px;
+  color: #767676;
+}
 .interior-lede {
   text-align: center;
 }
@@ -762,7 +803,21 @@ h3 {
   line-height: 32px;
   padding-bottom: 35px;
 }
-.btn-fyv-red {
+#itemcarousel {
+  position: relative;
+  top: -55px;
+  border: none!important;
+}
+#itemcarousel .carousel-inner {
+  box-shadow: none!important;
+}
+.exhibit-item-caption p {
+  font-family: Arial, sans-serif;
+  font-size: 12px!important;
+  color: #333;
+}
+.btn-fyv-red,
+.btn-fyv-red a {
   background-color: #e02544;
   border-radius: 0px;
   color: #fff;
@@ -770,7 +825,8 @@ h3 {
   font-size: 30px;
   font-family: "bebas-neue", sans-serif;
 }
-.btn-fyv-red:hover {
+.btn-fyv-red:hover,
+.btn-fyv-red a:hover {
   color: #fff;
   text-decoration: underline;
 }

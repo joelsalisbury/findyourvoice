@@ -171,6 +171,15 @@ class ExhibitLayout
                 'name' => __('Historic Voice Interior Page Header Block'),
                 'description' => __('Pick photo, then header, then a block of text')
             ),
+            'historic-voice-interior-header-fullpage' => array(
+                'name' => __('FULL PAGE Historic Voice Section Header'),
+                'description' => __('Pick photo, then header, then a block of text')
+            ),
+
+            'historic-voice-interior-header-fullpage-first' => array(
+                'name' => __('First Header on a Full-page Historic Voice Exhibit'),
+                'description' => __('Just text. Use HTML tags.')
+            ),
               'historic-voice-header-youtube' => array(
                 'name' => __('Historic Voice Header w Youtube'),
                 'description' => __('For the Tubes of You')

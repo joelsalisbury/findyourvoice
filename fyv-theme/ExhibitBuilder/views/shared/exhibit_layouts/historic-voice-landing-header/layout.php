@@ -11,7 +11,7 @@ $captionPosition = isset($options['captions-position'])
 ?>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
-<div id="interior-jumbo" class="jumbotron" style="margin-bottom:170px;">
+<div id="interior-jumbo" class="jumbotron" style="margin-bottom:70px;">
   <div class="container">
     <div class="row">
            <?php $counter = 0; ?>
@@ -29,7 +29,9 @@ $captionPosition = isset($options['captions-position'])
         <?php 
           $counter++;
         endforeach; ?>
-        <div class="col-md-6"><div class="video-box thumbnail"><?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?></div></div>  
+        <div class="col-md-6"><div class="video-box thumbnail"><!-- ?php echo $this->exhibitAttachment($attachment, array('imageSize' => $size)); ?> --> <iframe width="545" height="315" 
+          src="https://www.youtube.com/embed/" frameborder="0" 
+          allowfullscreen></iframe></div></div>  
       <div class="col-md-6">
         <h2><?php echo metadata('exhibit', 'title'); ?></h2>
         <h1><?php echo metadata('exhibit_page', 'title'); ?></h1>
